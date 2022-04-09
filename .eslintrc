@@ -1,0 +1,11 @@
+{
+  "extends": "@artiefuzzz/eslint-config",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json",
+    "extraFileExtensions": [".mjs"]
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-extra-parens": "off"
+  }
+}
