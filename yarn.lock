@@ -17,12 +17,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@artiefuzzz/lynx@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@artiefuzzz/lynx@npm:2.4.1"
+  dependencies:
+    "@artiefuzzz/utils": ^1.2.1
+    undici: ^5.0.0
+  checksum: 5dc8316e92a86b96bd8628994aa257e0c8fa8e4f9b3ed16502d4157b5d4e7e22c2854bb9befc9c97bba7518b02ef6804563f3b728068bd18c06943306e6699a0
+  languageName: node
+  linkType: hard
+
 "@artiefuzzz/ts@npm:^1.3.2":
   version: 1.3.2
   resolution: "@artiefuzzz/ts@npm:1.3.2"
   dependencies:
     tslib: ^2.3.1
   checksum: 6331ec7f65198ea5df36596a3bd3f24d32560df9147b8837dbd776448bb5c7bc19bdd3f8b96e2917e07ddf150d7deb89eab003718ab42aec5f7e022908699d9b
+  languageName: node
+  linkType: hard
+
+"@artiefuzzz/utils@npm:^1.2.1, @artiefuzzz/utils@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@artiefuzzz/utils@npm:1.2.4"
+  checksum: be1c0691093d874486381da3d92177676827c3e35c5cca0aa5c2ba7f05ed5384a57e7dea392fb455ec46a57bd799507a2f40c0ce3118f7415d9a789e38924efa
   languageName: node
   linkType: hard
 
@@ -97,10 +114,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@trpc/server@npm:^9.22.0":
+  version: 9.22.0
+  resolution: "@trpc/server@npm:9.22.0"
+  checksum: fcdae14621224358e0e2c88d0d55c039eee4f25727720a0a79e9262a10325d958dbdcbb3e7c98d7a1cadf65f092101aebec3e9f55defbc24f79a5cdd54d07e60
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.23":
+  version: 17.0.23
+  resolution: "@types/node@npm:17.0.23"
+  checksum: a3517554737cbb042e76c30d0e5482192ac4d9bea0eeb086e2622d9cabf460a0eb52a696b99fcd18e7fcc93c96db6cc7ae507f6608f256ef0b5c1d8c87a5a470
   languageName: node
   linkType: hard
 
@@ -675,6 +706,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fastify-plugin@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "fastify-plugin@npm:3.0.1"
+  checksum: 131ba0a388f777829c3fb0fd5b75cf057688ce6d0ca354fb1ebf829767a8c853b0825762b9185b5200097454df0ede2f3095da2efe1aa1b3736d07f194e6d374
+  languageName: node
+  linkType: hard
+
 "fastify@npm:^3.28.0":
   version: 3.28.0
   resolution: "fastify@npm:3.28.0"
@@ -1138,6 +1176,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prxi@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "prxi@workspace:."
+  dependencies:
+    "@artiefuzzz/eslint-config": ^1.2.0
+    "@artiefuzzz/lynx": ^2.4.1
+    "@artiefuzzz/ts": ^1.3.2
+    "@artiefuzzz/utils": ^1.2.4
+    "@trpc/server": ^9.22.0
+    "@types/node": ^17.0.23
+    eslint: ^8.13.0
+    fastify: ^3.28.0
+    fastify-plugin: ^3.0.1
+    typescript: ^4.6.3
+    zod: ^3.14.4
+  languageName: unknown
+  linkType: soft
+
 "punycode@npm:^2.1.0":
   version: 2.1.1
   resolution: "punycode@npm:2.1.1"
@@ -1211,17 +1267,6 @@ __metadata:
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@artiefuzzz/eslint-config": ^1.2.0
-    "@artiefuzzz/ts": ^1.3.2
-    eslint: ^8.13.0
-    fastify: ^3.28.0
-  languageName: unknown
-  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
@@ -1402,6 +1447,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^4.6.3":
+  version: 4.6.3
+  resolution: "typescript@npm:4.6.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
+  version: 4.6.3
+  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 6bf45caf847062420592e711bc9c28bf5f9a9a7fa8245343b81493e4ededae33f1774009d1234d911422d1646a2c839f44e1a23ecb111b40a60ac2ea4c1482a8
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "undici@npm:5.0.0"
+  checksum: 98bb9914aa0647840ce6fd518ac828b7760df8d9b747680d11260fcb4f50af0029b0513e5600bf0d3a812d9e3f8d9d787bbcbcee7b9e75aa5f7de6f9b0212898
+  languageName: node
+  linkType: hard
+
 "uri-js@npm:^4.2.2":
   version: 4.4.1
   resolution: "uri-js@npm:4.4.1"
@@ -1440,5 +1512,12 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 159da4805f7e84a3d003d8841557196034155008f817172d4e986bd591f74aa82aa7db55929a54222309e01079a65a92a9e6414da5a6aa4b01ee44a511ac3ee5
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.14.4":
+  version: 3.14.4
+  resolution: "zod@npm:3.14.4"
+  checksum: 30e75dc1e4e1d6ce5695750d1906b6b918779b8aa446f5db77eb2b8344d08f29344b5d0115034a9e695fd5a627d23c5c03d67efe58fe16fbb91dee9dc08761bc
   languageName: node
   linkType: hard
